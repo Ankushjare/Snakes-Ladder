@@ -1,94 +1,49 @@
 ﻿using System;
 
-namespace SnakeAndLadder
+namespace SnakeAndLadder1
 {
     class Program
     {
-        const int WIN_POSITION = 100;
-        public static int currentPosition = 1;
-        static Random random = new Random();
-        public static int throwDice()
-        {
-            return random.Next(1, 7);
-        }
-
-        public static int checkForOption()
-        {
-            return random.Next(1, 4);
-        }
-
         static void Main(string[] args)
         {
-            int playerOnePosition = 0;
-            int playerTwoPosition = 0;
-            int playerOneRollDiceCount = 0;
-            int playerTwoRollDiceCount = 0;
+            Console.WriteLine("Welcome message");
+            /*Console.WriteLine("Use case1: ");
+            UC1 obj1 = new UC1();
+            obj1.initalizeplayer();*/
 
-            while (playerOnePosition < WIN_POSITION || playerTwoPosition < WIN_POSITION)
-            {
-                int playerOnethrowDices = throwDice();
-                playerOneRollDiceCount++;
-                int playerTwothrowDices = throwDice();
-                playerTwoRollDiceCount++;
-                int selectdOption = checkForOption();
-                switch (selectdOption)
-                {
-                    case 1:
-                        Console.WriteLine("Player got ladder");
-                        playerOnePosition += playerOnethrowDices;
-                        playerTwoPosition += playerTwothrowDices;
-                        if (playerOnePosition > WIN_POSITION)
-                        {
-                            playerOnePosition -= playerOnethrowDices;
-                        }
-                        else if (playerTwoPosition > WIN_POSITION)
-                        {
-                            playerTwoPosition -= playerTwothrowDices;
-                        }
-                        Console.WriteLine("player one poistion is =" + playerOnePosition);
-                        Console.WriteLine("player two poistion is =" + playerTwoPosition);
+            /*Console.WriteLine("Use case2: ");
+            UC2 obj2 = new UC2();
+            obj2.throwDice();*/
 
-                        break;
-                    case 2:
-                        Console.WriteLine("Player got snake");
-                        if ((playerOnePosition - playerOnethrowDices) < 0)
-                        {
-                            playerOnePosition = 0;
-                        }
-                        else
-                        {
-                            playerOnePosition -= playerOnethrowDices;
-                        }
-                        if ((playerTwoPosition - playerTwothrowDices) < 0)
-                        {
-                            playerTwoPosition = 0;
-                        }
-                        else
-                        {
-                            playerTwoPosition -= playerTwothrowDices;
-                        }
-                        Console.WriteLine("player one poistion is =" + playerOnePosition);
-                        Console.WriteLine("player two poistion is =" + playerTwoPosition);
-                        break;
-                    case 3:
-                        Console.WriteLine("player not play");
-                        break;
-                    default:
-                        break;
-                }
-                if (playerOnePosition == WIN_POSITION)
-                {
-                    Console.WriteLine("Player one is won!");
-                    Console.WriteLine("number of dice was played by player for win the game is" + playerOneRollDiceCount);
-                    break;
-                }
-                else if ((playerTwoPosition == WIN_POSITION) && (playerOnePosition != WIN_POSITION))
-                {
-                    Console.WriteLine("Player two is won!");
-                    Console.WriteLine("number of dice was played by player for win the game is =" + playerTwoRollDiceCount);
-                    break;
-                }
-            }
+            /*Console.WriteLine("Use case3: ");
+            UC3 obj3 = new UC3();
+            obj3.throwDice();
+            obj3.checkForOption();
+            obj3.playerOption();*/
+
+            /*Console.WriteLine("Use case4: ");
+            UC4 obj4 = new UC4();
+            obj4.throwDice();
+            obj4.checkForOption();
+            obj4.playerOption();*/
+
+            /*Console.WriteLine("Use case5: ");
+            UC5 obj5 = new UC5();
+            obj5.throwDice();
+            obj5.checkForOption();
+            obj5.Check();
+*/
+            /* Console.WriteLine("Use case6: ");
+             UC6 obj6 = new UC6();
+             obj6.throwDice();
+             obj6.checkForOption();
+             obj6.exactwinning();*/
+
+            Console.WriteLine("Use case7: ");
+            UC7 obj7 = new UC7();
+            obj7.throwDice();
+            obj7.checkForOption();
+            obj7.twoplayer();
         }
     }
 }
