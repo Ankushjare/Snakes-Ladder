@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31729.503
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SnakeAndLadder", "SnakeAndLadder\SnakeAndLadder.csproj", "{675CF9BF-B0EE-4A5D-A1A3-B8F5D6940F57}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SnakeAndLadder", "SnakeAndLadder\SnakeAndLadder.csproj", "{BDD7503B-EF9D-4785-97A7-0B77DFED9F66}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{675CF9BF-B0EE-4A5D-A1A3-B8F5D6940F57}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{675CF9BF-B0EE-4A5D-A1A3-B8F5D6940F57}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{675CF9BF-B0EE-4A5D-A1A3-B8F5D6940F57}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{675CF9BF-B0EE-4A5D-A1A3-B8F5D6940F57}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BDD7503B-EF9D-4785-97A7-0B77DFED9F66}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BDD7503B-EF9D-4785-97A7-0B77DFED9F66}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BDD7503B-EF9D-4785-97A7-0B77DFED9F66}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BDD7503B-EF9D-4785-97A7-0B77DFED9F66}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {E2814909-9F20-4FE9-8BB0-20504B2C70E9}
+		SolutionGuid = {5FCE8403-717E-4A40-8ED8-00B5AD7F2618}
 	EndGlobalSection
 EndGlobal
