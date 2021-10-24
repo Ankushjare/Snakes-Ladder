@@ -4,11 +4,13 @@ namespace SnakeAndLadder
 {
     class Program
     {
-        const int START_POSITION = 0;
-        const int END_POSITION = 100;
+        // const int START_POSITION = 0;
+        // public static int selectedOption = 0;
         public static int currentPosition = 1;
-        public static int selectedOption = 0;
+        const int WIN_POSITION = 100;
+        //const int END_POSITION = 100;
         static Random random = new Random();
+
         public static int throwDice()
         {
             return random.Next(1, 7);
@@ -21,16 +23,18 @@ namespace SnakeAndLadder
 
         static void Main(string[] args)
         {
-            while (currentPosition < END_POSITION)
+            int RollDiceCount = 0;
+            while (currentPosition < WIN_POSITION)
             {
                 int throwDices = throwDice();
+                RollDiceCount++;
                 int selectedOption = checkForOption();
                 switch (selectedOption)
                 {
                     case 1:
                         Console.WriteLine("Player got ladder");
                         currentPosition += throwDices;
-                        if (currentPosition > END_POSITION)
+                        if (currentPosition > WIN_POSITION)
                         {
                             currentPosition -= throwDices;
                         }
@@ -53,7 +57,12 @@ namespace SnakeAndLadder
                         break;
                 }
 
-
+                if (currentPosition == WIN_POSITION)
+                {
+                    Console.WriteLine("Player won!");
+                    Console.WriteLine("number of dice was played by player for win the game is" + RollDiceCount);
+                    break;
+                }
             }
         }
 
